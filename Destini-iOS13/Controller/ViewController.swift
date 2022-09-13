@@ -14,11 +14,15 @@ class ViewController: UIViewController {
     @IBOutlet weak var choice1Button: UIButton!
     @IBOutlet weak var choice2Button: UIButton!
     
+    let story0 = "You see a fork in the road"
+    let choice1 = "take a left"
+    let choice2 = "take a right"
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        storyLabel.text = story0
+        choice1Button.titleLabel!.text = choice1
+        choice2Button.titleLabel!.text = choice2
     }
-
-
 }
 
