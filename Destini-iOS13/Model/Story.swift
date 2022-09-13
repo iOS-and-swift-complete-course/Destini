@@ -8,7 +8,12 @@
 import Foundation
 
 struct Story {
+    var id: Int
     var title: String
-    var choice1: String
-    var choice2: String
+    var choices: [Choice]
+}
+
+struct Choice {
+    var choiceTitle: String
+    var nextStory: Int
 }
